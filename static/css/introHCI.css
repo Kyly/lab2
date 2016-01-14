@@ -1,27 +1,15 @@
-body {
-	border: none
-}
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
+body, h1, h2, h3, h4, h5, p {
+	font-family: 'Playfair Display', serif;
 }
 
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */
-	color: #CC00AA;
-}
-
-/* this style exists to make it obvious that you've successfully linked
-   the CSS to the page. feel free to remove it once the link is working. */
-body {
-     border: 1px dotted gray;
-     padding: 20px;
+h2, h3 {
+	font-weight: 700;
 }
 
 .jumbotron {
 	position: relative;
 	background: none;
+	width: 100%;
 }
 
 .jumbotron:after {
@@ -34,13 +22,6 @@ body {
      right: 0;
      position: absolute;
      z-index: -1;
-}
-
-.project {
-    /*margin-left: 20px;*/
-    /*background-color: #deebf7;*/
-    /*padding: 20px;*/
-    /*width: 525px;*/
 }
 
 .project > a.thumbnail {
