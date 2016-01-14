@@ -34,7 +34,7 @@
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div class="grid js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "percentPosition": true}'>
+		<div class="grid">
 			<div class="grid-sizer col-md-4"></div>
 			<div class="project grid-item col-md-8" id="project1">
 				<a href="project.html" class="thumbnail">
@@ -91,5 +91,14 @@
 	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+	<script type="text/javascript">
+	$(window).load(function(){
+		$('.grid').masonry({
+			itemSelector: ".grid-item",
+			columnWidth: ".grid-sizer",
+			percentPosition: true
+		});
+	});
+	</script>
 </body>
 </html>
