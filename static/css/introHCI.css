@@ -1,3 +1,6 @@
+body {
+	border: none
+}
 /* applies to anything of class "example-class-selector" */
 .example-class-selector {
 	margin-top: 2em;
@@ -65,4 +68,8 @@ p {
   content: '';
   display: block;
   clear: both;
+}
+
+.grid-item {
+	display: none;
 }

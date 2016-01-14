@@ -92,7 +92,12 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
 	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.grid-item').hide();
+	});
+
 	$(window).load(function(){
+		$('.grid-item').fadeIn();
 		$('.grid').masonry({
 			itemSelector: ".grid-item",
 			columnWidth: ".grid-sizer",
